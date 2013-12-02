@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, CarActivity!</string>
+    <string name="app_name">CarArena</string>
+    <string name="about_app">(&#169;) copyright 2013\n This is the basic version of\n CarArena v1.0 which gives\n details about the Cars\n to the students of \nAutomobile Engg and will be \n further updated in \n next versions.</string>
+
+    <dimen name="labelsd">14dp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">Car Arena</string>
+
+</resources>

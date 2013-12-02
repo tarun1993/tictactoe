@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cars"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:backupAgent="android.app.backup.BackupAgentHelper"
+        android:icon="@drawable/lanchericon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity android:name="com.cars.HomePg" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cars.Search" >
+        </activity>
+        <activity android:name="com.cars.Search1" >
+        </activity>
+        <activity android:name="com.cars.SearchResults" >
+        </activity>
+        <activity android:name="com.cars.About" >
+        </activity>
+    </application>
+
+</manifest>

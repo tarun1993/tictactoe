@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcolor" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/headerc" >
+
+        <ImageView
+            android:id="@+id/headericon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:src="@drawable/headericon" />
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/headericon"
+            android:text="@string/title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/exitApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentRight="true"
+            android:src="@drawable/exit" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgabout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:text="About"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgabout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:clickable="true"
+        android:src="@drawable/about" />
+
+    <ImageView
+        android:id="@+id/imgsearch1"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/imgsearch"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="46dp"
+        android:layout_toLeftOf="@+id/imgabout"
+        android:src="@drawable/car_brands" />
+
+    <TextView
+        android:id="@+id/rearAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/imgsearch"
+        android:layout_toLeftOf="@+id/imgabout"
+        android:text="Search Car"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgsearch1"
+        android:layout_toLeftOf="@+id/imgabout"
+        android:text="Search by Brand"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgsearch"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/rearAC"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="21dp"
+        android:layout_toLeftOf="@+id/imgabout"
+        android:src="@drawable/car_search" />
+
+</RelativeLayout>
